@@ -6,19 +6,7 @@
 
  * Если мы хотим добавить модуль следует его раскомментировать
  */
-import {
-  isWebp,
-  headerFixed,
-  togglePopupWindows,
-  addTouchClass,
-  addLoadedClass,
-} from './modules';
-
-// import BurgerMenu from './modules/BurgerMenu';
-
-// import Tabs from 'modules/Tabs';
-
-// import { MousePRLX } from './libs/parallaxMouse'
+import { isWebp } from './modules';
 
 // import AOS from 'aos'
 
@@ -35,30 +23,8 @@ isWebp();
 /* Добавление loaded для HTML после полной загрузки страницы */
 // addLoadedClass();
 
-/* Модуль для работы с меню (Бургер) */
-// new BurgerMenu().init();
-
 /**
  *  Библиотека для анимаций
  *  документация: https://michalsnik.github.io/aos
  */
 // AOS.init();
-
-/** Параллакс мышей */
-// const mousePrlx = new MousePRLX({});
-
-/** Фиксированный header */
-// headerFixed();
-
-/**
- *  Открытие/закрытие модальных окон
- * Чтобы модальное окно открывалось и закрывалось
- * На окно повешай атрибут data-popup="<название окна>"
- * И на кнопку, которая вызывает окно так же повешай атрибут data-type="<название окна>"
-
- * На обертку(враппер) окна добавь класс _overlay-bg
- * На кнопку для закрытия окна добавь класс button-close
- */
-// togglePopupWindows();
-
-// const tabs = new Tabs('default-tabs', {});
