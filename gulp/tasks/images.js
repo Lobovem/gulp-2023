@@ -11,7 +11,7 @@ const images = () => {
     .src(filePaths.src.images)
     .pipe(plugins.handleError('IMAGES'))
     .pipe(plugins.newer(filePaths.build.images))
-    .pipe(plugins.if(isBuild, webp()))
+    // .pipe(plugins.if(isBuild, webp()))  //active if you need tag picture
     .pipe(plugins.if(isBuild, gulp.dest(filePaths.build.images)))
     .pipe(plugins.if(isBuild, gulp.src(filePaths.src.images)))
     .pipe(plugins.if(isBuild, plugins.newer(filePaths.build.images)))

@@ -13,7 +13,7 @@ const html = () => {
     .pipe(plugins.handleError('HTML'))
     .pipe(fileInclude())
     .pipe(plugins.replace(/@img\//g, 'images/'))
-    .pipe(plugins.if(app.isBuild, webpHtml()))
+    // .pipe(plugins.if(app.isBuild, webpHtml()))   //active if you need tag picture
     .pipe(
       htmlMin({
         useShortDoctype: true,
